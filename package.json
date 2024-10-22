@@ -1,0 +1,47 @@
+{
+  "name": "resume-new",
+  "version": "1.0.3",
+  "type": "module",
+  "homepage": "https://livegp.github.io/resume-new",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/livegp/resume-new/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livegp/resume-new"
+  },
+  "author": {
+    "name": "Oleksandr Pishta",
+    "email": "live.gp@gmail.com",
+    "url": "https://github.com/livegp"
+  },
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build",
+    "preview": "bunx --bun vite preview",
+    "format": "biome format --write --unsafe",
+    "lint": "biome lint --write --unsafe",
+    "check": "biome check --write --unsafe"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "lefthook": "^1.8.0",
+    "unplugin-turbo-console": "^1.10.4",
+    "vite": "^5.4.9",
+    "vite-imagetools": "^7.0.4",
+    "vite-plugin-biome": "^1.0.12",
+    "vite-plugin-favicons-inject": "^2.2.0",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-minify": "^2.0.0",
+    "vite-plugin-open-graph": "^2.0.6",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-svg-spritemap": "^1.0.1",
+    "vite-plugin-webfont-dl": "^3.9.5"
+  },
+  "dependencies": {
+    "html2pdf.js": "^0.10.2"
+  }
+}
