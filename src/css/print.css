@@ -115,8 +115,4 @@
   @page {
     margin: 0.3cm;
   }
-  /* Displaying links */
-  /* a[href^="http"]:not([href*="mywebsite.com"]):after {
-    content: " (" attr(href) ")";
-  } */
 }

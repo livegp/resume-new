@@ -1,6 +1,7 @@
 import TurboConsole from 'unplugin-turbo-console/vite';
 import { defineConfig, loadEnv } from 'vite';
 import { imagetools } from 'vite-imagetools';
+import biomePlugin from 'vite-plugin-biome';
 import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
 import injectHtml from 'vite-plugin-html-inject';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
@@ -27,12 +28,12 @@ export default defineConfig(({ mode }) => {
     plugins: [
       ViteMinifyPlugin({}),
       TurboConsole({}),
-      // biomePlugin({
-      //   mode: 'check',
-      //   files: '.',
-      //   applyFixes: true,
-      //   failOnError: false,
-      // }),
+      biomePlugin({
+        mode: 'check',
+        files: '.',
+        applyFixes: true,
+        failOnError: false,
+      }),
       webfontDownload(
         [
           'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap',
@@ -132,7 +133,7 @@ export default defineConfig(({ mode }) => {
           imageAlt: 'Vite Image',
         },
         facebook: {
-          appId: '100000506117116',
+          appId: 100000506117116,
         },
       }),
       injectHtml(),

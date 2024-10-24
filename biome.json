@@ -4,7 +4,7 @@
     "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": false,
-    "defaultBranch": "master"
+    "defaultBranch": "main"
   },
   "files": {
     "ignore": ["dist", "node_modules"],
