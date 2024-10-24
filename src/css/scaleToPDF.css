@@ -10,7 +10,6 @@
   max-width: 595px;
 }
 .scale-cv .section {
-  /* padding: 0.75rem 0 0 0; */
   padding: 0.75rem 0 0 0;
 }
 .scale-cv .section-title {
@@ -28,7 +27,6 @@
   height: 100px;
 }
 .scale-cv .home__container {
-  /* gap: 1.5rem; */
   gap: 1rem;
 }
 .scale-cv .home__data {
@@ -44,7 +42,6 @@
 .scale-cv .experience__container,
 .scale-cv .courses__container,
 .scale-cv .certificate__container {
-  /* gap: 0.7rem; */
   gap: 0.5rem;
 }
 .scale-cv .home__icon,

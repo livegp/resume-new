@@ -1,5 +1,4 @@
-/*===== VARIABLES CSS =====*/
-:root {
+/*===== VARIABLES CSS =====*/ :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
   --title-color: #0b0a0a;
@@ -540,4 +539,65 @@ body.dark-theme {
 .show-scroll {
   visibility: visible;
   bottom: 5rem;
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices, menu two columns */
+@media screen and (max-width: 320px) {
+  .nav__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 967px) {
+  .social__container,
+  .interests__container,
+  .skills__container,
+  .languages__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+/* Classes modified for large screen size */
+@media screen and (min-width: 968px) {
+  body {
+    margin: 3rem 0;
+  }
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .l-header,
+  .scrolltop {
+    display: none;
+  }
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+  .resume__left,
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+  .generate-pdf {
+    display: flex;
+  }
+  .section-title {
+    text-align: initial;
+  }
+
+  .home__container {
+    gap: 1.5rem;
+  }
+  .home__button-movil {
+    display: none;
+  }
+  .references__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
