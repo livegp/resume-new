@@ -40,8 +40,14 @@ body {
   padding: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
   color: var(--text-color);
+  background-color: var(--container-color-alt);
+}
+@media screen and (min-width: 968px) {
+  body {
+    margin: 3rem 0;
+    background-color: var(--body-color);
+  }
 }
 h1,
 h2,
@@ -115,6 +121,11 @@ body.dark-theme {
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 968px) {
+  .generate-pdf {
+    display: flex;
+  }
+}
 .generate-pdf:hover {
   color: var(--title-color);
 }
@@ -147,12 +158,23 @@ body.dark-theme {
   text-align: center;
   margin-bottom: var(--mb-3);
 }
+@media screen and (min-width: 968px) {
+  .section-title {
+    text-align: initial;
+  }
+}
 /*========== LAYOUT ==========*/
 .bd-container {
   max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
+}
+@media screen and (min-width: 968px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .bd-grid {
   display: grid;
@@ -169,9 +191,13 @@ body.dark-theme {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
+@media screen and (min-width: 968px) {
+  .l-header {
+    display: none;
+  }
+}
 .external-link-icon {
   font-size: 0.6rem;
-  /* color: var(--text-color-light); */
   fill: var(--text-color-light);
 }
 /*========== Dovnload PDF button ==========*/
@@ -189,6 +215,11 @@ body.dark-theme {
   background-color: var(--text-color);
   color: var(--container-color);
 }
+@media screen and (min-width: 968px) {
+  .home__button-movil {
+    display: none;
+  }
+}
 /*========== NAV ==========*/
 .nav {
   height: var(--header-height);
@@ -196,22 +227,21 @@ body.dark-theme {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 968px) {
+.nav__menu {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: var(--container-color-alt);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem 1rem 0 0;
+  z-index: var(--z-fixed);
+  transition: 0.3s;
+}
+@media screen and (min-width: 968px) {
   .nav__menu {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    padding: 2rem 1.5rem;
-    /* background-color: var(--body-color); */
-    background-color: var(--container-color-alt);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem 1rem 0 0;
-    z-index: var(--z-fixed);
-    transition: 0.3s;
-  }
-  body {
-    background-color: var(--container-color-alt);
+    display: none;
   }
 }
 .nav__logo,
@@ -230,6 +260,16 @@ body.dark-theme {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+@media screen and (max-width: 320px) {
+  .nav__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 967px) {
+  .nav__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .nav__link {
   display: flex;
@@ -306,12 +346,33 @@ body.dark-theme {
 .burger.active {
   background: var(--container-color-alt);
 }
+/* Classes modified for large screen size */
+@media screen and (min-width: 968px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+  .resume__left,
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+}
 /*========== HOME ==========*/
 .home {
   position: relative;
 }
 .home__container {
   gap: 3rem;
+}
+@media screen and (min-width: 968px) {
+  .home__container {
+    gap: 1.5rem;
+  }
 }
 .home__data {
   gap: 0.5rem;
@@ -391,6 +452,12 @@ body.dark-theme {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+@media screen and (min-width: 500px) and (max-width: 967px) {
+  .social__container,
+  .interests__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .social__link {
   display: inline-flex;
   gap: 0.5rem;
@@ -418,6 +485,12 @@ body.dark-theme {
 .languages__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+@media screen and (min-width: 500px) and (max-width: 967px) {
+  .skills__container,
+  .languages__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .skills__name,
 .languages__name {
@@ -532,6 +605,11 @@ body.dark-theme {
     0px 1px 1px 0px rgba(112, 112, 112, 0.14),
     0px 2px 1px -1px rgba(112, 112, 112, 0.12);
 }
+@media screen and (min-width: 968px) {
+  .scrolltop {
+    display: none;
+  }
+}
 .scrolltop__icon {
   font-size: 1.2rem;
   color: var(--text-color);
@@ -540,64 +618,100 @@ body.dark-theme {
   visibility: visible;
   bottom: 5rem;
 }
-
-/*========== MEDIA QUERIES ==========*/
-/* For small devices, menu two columns */
-@media screen and (max-width: 320px) {
-  .nav__list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 0.5rem;
-  }
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .change-theme,
+.scale-cv .generate-pdf {
+  display: none;
 }
-@media screen and (min-width: 500px) and (max-width: 967px) {
-  .social__container,
-  .interests__container,
-  .skills__container,
-  .languages__container {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
+.scale-cv .link-resume {
+  display: flex;
 }
-/* Classes modified for large screen size */
-@media screen and (min-width: 968px) {
-  body {
-    margin: 3rem 0;
-  }
-  .bd-container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .l-header,
-  .scrolltop {
-    display: none;
-  }
-  .resume {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
-  }
-  .resume__left {
-    background-color: var(--container-color-alt);
-  }
-  .resume__left,
-  .resume__right {
-    padding: 0 1.5rem;
-  }
-  .generate-pdf {
-    display: flex;
-  }
-  .section-title {
-    text-align: initial;
-  }
-
-  .home__container {
-    gap: 1.5rem;
-  }
-  .home__button-movil {
-    display: none;
-  }
-  .references__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.scale-cv .bd-container {
+  max-width: 595px;
+}
+.scale-cv .section {
+  padding: 0.75rem 0 0 0;
+}
+.scale-cv .section-title {
+  margin-bottom: 0.5rem;
+}
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  padding: 0 1rem;
+}
+.scale-cv .home__img {
+  width: 100px;
+  height: 100px;
+}
+.scale-cv .home__section {
+  height: 100px;
+}
+.scale-cv .home__container {
+  gap: 1rem;
+}
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+.scale-cv .home__address,
+.scale-cv .social__container,
+.scale-cv .interests__container,
+.scale-cv .languages__container,
+.scale-cv .skills__container,
+.scale-cv .education__container,
+.scale-cv .project__container,
+.scale-cv .experience__container,
+.scale-cv .courses__container,
+.scale-cv .certificate__container {
+  gap: 0.5rem;
+}
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon {
+  font-size: 1rem;
+}
+.scale-cv .interests__container,
+.scale-cv .skills_container_,
+.scale-cv .languages__container {
+  font-size: var(--small-font-size);
+}
+.scale-cv .education__time,
+.scale-cv .project__time,
+.scale-cv .experience__time,
+.scale-cv .courses__time,
+.scale-cv .certificate__time {
+  padding-right: 0.5rem;
+}
+.scale-cv .education__rounder,
+.scale-cv .project__rounder,
+.scale-cv .experience__rounder,
+.scale-cv .courses__rounder,
+.scale-cv .certificate__rounder {
+  width: 11px;
+  height: 11px;
+  margin-top: 0.22rem;
+}
+.scale-cv .education__line,
+.scale-cv .project__line,
+.scale-cv .experience__line,
+.scale-cv .courses__line,
+.scale-cv .certificate__line {
+  width: 1px;
+  height: 110%;
+  transform: translate(5px, 0);
+}
+.scale-cv .education__data,
+.scale-cv .project__data,
+.scale-cv .experience__data,
+.scale-cv .courses__data,
+.scale-cv .certificate__data {
+  gap: 0.25rem;
+}
+/*========== Font size variables to scale cv ==========*/
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
 }
