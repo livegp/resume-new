@@ -95,7 +95,7 @@ function removeScale() {
   document.body.classList.remove('scale-cv');
 }
 /*= =================== GENERATE PDF ==================== */
-import html2pdf from "html2pdf.js";
+import html2pdf from 'html2pdf.js';
 // PDF generated area
 const areaCv = document.querySelector('#area-cv');
 const resumeButton = document.querySelector('#resume-button');
