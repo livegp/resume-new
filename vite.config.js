@@ -2,11 +2,11 @@ import TurboConsole from 'unplugin-turbo-console/vite';
 import { defineConfig, loadEnv } from 'vite';
 import { imagetools } from 'vite-imagetools';
 import biomePlugin from 'vite-plugin-biome';
-import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
+import hashedFaviconsPlugin from 'vite-plugin-hashed-favicons';
 import injectHtml from 'vite-plugin-html-inject';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import ogPlugin from 'vite-plugin-open-graph';
-import { svgSpritemap } from 'vite-plugin-svg-spritemap';
+// import { svgSpritemap } from 'vite-plugin-svg-spritemap';
 import { webfontDownload } from 'vite-plugin-webfont-dl';
 
 // https://vitejs.dev/config/
@@ -18,13 +18,25 @@ export default defineConfig(({ mode }) => {
       'process.env': env,
     },
     base: env.VITE_BASE_URL || '/',
+    cacheDir: 'node_modules/.cache/.vite',
     server: {
       port: mode === 'development' ? 3000 : 8080,
+      strictPort: false,
     },
     build: {
-      outDir: mode === 'production' ? 'dist' : 'build',
+      outDir: 'dist',
+      cssMinify: 'lightningcss',
       sourcemap: true,
+      manifest: true,
     },
+    html: {
+      cspNonce: 'VITE_NONCE',
+    },
+    css: {
+      transformer: 'lightningcss',
+      devSourcemaps: true,
+    },
+    appType: 'spa',
     plugins: [
       ViteMinifyPlugin({}),
       TurboConsole({}),
@@ -59,50 +71,49 @@ export default defineConfig(({ mode }) => {
           dir: './node_modules/.cache/imagetools',
         },
       }),
-      svgSpritemap({
-        pattern: 'src/icons/*.svg',
-        prefix: '',
-        filename: 'spritemap.svg',
-        currentColor: false,
-        svgo: true,
-        emit: false,
-      }),
-      vitePluginFaviconsInject('src/favicons/favicons.svg', {
-        path: '/',
+      // svgSpritemap({
+      //   pattern: 'src/icons/*.svg',
+      //   prefix: '',
+      //   filename: 'spritemap.svg',
+      //   currentColor: false,
+      //   svgo: true,
+      //   emit: false,
+      // }),
+      hashedFaviconsPlugin('src/icon/favicons.svg', {
+        version: '1.0',
+        lang: 'en-US',
         appName: 'resume-new',
         appShortName: 'resume-new',
-        appDescription: 'the starting template of the project',
+        appDescription: 'Resume Oleksandr Pishta',
         developerName: 'Oleksandr Pishta',
         // biome-ignore lint/style/useNamingConvention: <explanation>
         developerURL: 'https://livegp.github.io',
-        cacheBustingQueryParam: null,
-        dir: 'auto',
-        lang: 'en-US',
+        scope: '/',
+        // biome-ignore lint/style/useNamingConvention: <explanation>
+        start_url: '/?homescreen=1',
+        loadManifestWithCredentials: false,
+        manifestMaskable: true,
+        manifestRelativePaths: true,
         background: '#fff',
         // biome-ignore lint/style/useNamingConvention: <explanation>
         theme_color: '#fff',
         appleStatusBarStyle: 'black-translucent',
+        cacheBustingQueryParam: null,
+        dir: 'auto',
         display: 'standalone',
         orientation: 'any',
-        scope: '/',
-        // biome-ignore lint/style/useNamingConvention: <explanation>
-        start_url: '/?homescreen=1',
         preferRelatedApplications: false,
         relatedApplications: undefined,
-        version: '1.0',
         // biome-ignore lint/style/useNamingConvention: <explanation>
         pixel_art: false,
-        loadManifestWithCredentials: false,
-        manifestMaskable: true,
         icons: {
           android: true,
           appleIcon: true,
           appleStartup: true,
           favicons: true,
           windows: true,
-          yandex: false,
+          yandex: true,
         },
-        failGraciously: false,
       }),
       ogPlugin({
         basic: {
@@ -118,7 +129,7 @@ export default defineConfig(({ mode }) => {
             type: 'image/png',
             width: 900,
             height: 440,
-            alt: 'Vite Image',
+            alt: 'Resume image',
           },
         },
         twitter: {
@@ -130,13 +141,19 @@ export default defineConfig(({ mode }) => {
           description: 'Oleksandr Pishta, Full Stack Developer',
           title: 'resume-new',
           image: 'https://livegp.github.io/resume-new/og.jpg',
-          imageAlt: 'Vite Image',
+          imageAlt: 'Resume image',
         },
         facebook: {
           appId: 100000506117116,
         },
       }),
-      injectHtml(),
+      injectHtml({
+        tagName: 'load',
+        sourceAttr: 'src',
+        debug: {
+          logPath: false,
+        },
+      }),
     ],
   };
 });
