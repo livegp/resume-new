@@ -1,0 +1,88 @@
+{
+  "JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2": {
+    "file": "assets/JTUSjIg1_i6t8kCHKm459W1hyzbi-CHYi_LmU.woff2",
+    "src": "JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2"
+  },
+  "JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2": {
+    "file": "assets/JTUSjIg1_i6t8kCHKm459WRhyzbi-rV1oiNxr.woff2",
+    "src": "JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2"
+  },
+  "JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2": {
+    "file": "assets/JTUSjIg1_i6t8kCHKm459WZhyzbi-BXWSX9tz.woff2",
+    "src": "JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2"
+  },
+  "JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2": {
+    "file": "assets/JTUSjIg1_i6t8kCHKm459Wdhyzbi-BIVePy9u.woff2",
+    "src": "JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2"
+  },
+  "JTUSjIg1_i6t8kCHKm459Wlhyw.woff2": {
+    "file": "assets/JTUSjIg1_i6t8kCHKm459Wlhyw-BDA6280a.woff2",
+    "src": "JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+  },
+  "_html2canvas-DchvoVQH.js": {
+    "file": "assets/html2canvas-DchvoVQH.js",
+    "name": "html2canvas",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "boxicons.eot": {
+    "file": "assets/boxicons-CSrLvhY_.eot",
+    "src": "boxicons.eot"
+  },
+  "boxicons.svg": {
+    "file": "assets/boxicons-Dp7W9qN3.svg",
+    "src": "boxicons.svg"
+  },
+  "boxicons.ttf": {
+    "file": "assets/boxicons-EIQNrSje.ttf",
+    "src": "boxicons.ttf"
+  },
+  "boxicons.woff": {
+    "file": "assets/boxicons-CTVby2V1.woff",
+    "src": "boxicons.woff"
+  },
+  "boxicons.woff2": {
+    "file": "assets/boxicons-CeGEncwm.woff2",
+    "src": "boxicons.woff2"
+  },
+  "index.html": {
+    "file": "assets/index-B3wU86ZV.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "_html2canvas-DchvoVQH.js",
+      "node_modules/dompurify/dist/purify.es.js",
+      "node_modules/canvg/lib/index.es.js"
+    ],
+    "assets": [
+      "assets/styles-0F5uA7Ax.css",
+      "assets/perfil-C_WCq5PU.png"
+    ]
+  },
+  "node_modules/canvg/lib/index.es.js": {
+    "file": "assets/index.es-BrP-fPvF.js",
+    "name": "index.es",
+    "src": "node_modules/canvg/lib/index.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "node_modules/dompurify/dist/purify.es.js": {
+    "file": "assets/purify.es-a-CayzAK.js",
+    "name": "purify.es",
+    "src": "node_modules/dompurify/dist/purify.es.js",
+    "isDynamicEntry": true
+  },
+  "src/css/styles.css": {
+    "file": "assets/styles-0F5uA7Ax.css",
+    "src": "src/css/styles.css"
+  },
+  "src/img/perfil.png": {
+    "file": "assets/perfil-C_WCq5PU.png",
+    "src": "src/img/perfil.png"
+  }
+}
