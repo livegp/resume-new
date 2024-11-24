@@ -1,7 +1,7 @@
 /*= =================== SHOW MENU ==================== */
 const showMenu = (toggleId, navId) => {
-  const toggle = document.querySelector('#toggleId');
-  const nav = document.querySelector('#navId');
+  const toggle = document.querySelector(`#${toggleId}`);
+  const nav = document.querySelector(`#${navId}`);
 
   // Validate that variables exist
   if (toggle && nav) {

@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
     base: env.VITE_BASE_URL || '/',
     cacheDir: 'node_modules/.cache/.vite',
     server: {
-      port: mode === 'development' ? 3000 : 8080,
+      port: 3000,
       strictPort: false,
     },
     build: {

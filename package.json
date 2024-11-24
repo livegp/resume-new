@@ -28,10 +28,10 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "lefthook": "^1.8.1",
-    "lightningcss": "^1.27.0",
+    "lefthook": "^1.8.4",
+    "lightningcss": "^1.28.1",
     "unplugin-turbo-console": "^1.10.4",
-    "vite": "^5.4.10",
+    "vite": "^5.4.11",
     "vite-imagetools": "^7.0.4",
     "vite-plugin-biome": "^1.0.12",
     "vite-plugin-favicons-inject": "^2.2.0",
@@ -41,7 +41,7 @@
     "vite-plugin-open-graph": "^2.0.6",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-svg-spritemap": "^1.0.1",
-    "vite-plugin-webfont-dl": "^3.9.5"
+    "vite-plugin-webfont-dl": "^3.10.1"
   },
   "dependencies": {
     "html2pdf.js": "^0.10.2"
