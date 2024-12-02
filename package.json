@@ -28,20 +28,21 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "lefthook": "^1.8.4",
-    "lightningcss": "^1.28.1",
-    "unplugin-turbo-console": "^1.10.4",
-    "vite": "^5.4.11",
-    "vite-imagetools": "^7.0.4",
+    "@types/bun": "^1.1.14",
+    "lefthook": "^1.8.5",
+    "lightningcss": "^1.28.2",
+    "unplugin-turbo-console": "^1.10.6",
+    "vite": "^6.0.2",
+    "vite-imagetools": "^7.0.5",
     "vite-plugin-biome": "^1.0.12",
     "vite-plugin-favicons-inject": "^2.2.0",
     "vite-plugin-hashed-favicons": "^1.1.0",
     "vite-plugin-html-inject": "^1.1.2",
-    "vite-plugin-minify": "^2.0.1",
+    "vite-plugin-minify": "^2.1.0",
     "vite-plugin-open-graph": "^2.0.6",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-svg-spritemap": "^1.0.1",
-    "vite-plugin-webfont-dl": "^3.10.1"
+    "vite-plugin-webfont-dl": "^3.10.2"
   },
   "dependencies": {
     "html2pdf.js": "^0.10.2"
