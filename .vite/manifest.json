@@ -1,59 +1,51 @@
 {
-  "JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2": {
+  "_JTUSjIg1_i6t8kCHKm459W1hyzbi-D3on441i.woff2": {
     "file": "assets/JTUSjIg1_i6t8kCHKm459W1hyzbi-D3on441i.woff2",
-    "src": "JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2"
+    "src": "_JTUSjIg1_i6t8kCHKm459W1hyzbi-D3on441i.woff2"
   },
-  "JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2": {
+  "_JTUSjIg1_i6t8kCHKm459WRhyzbi-DV_LRdWn.woff2": {
     "file": "assets/JTUSjIg1_i6t8kCHKm459WRhyzbi-DV_LRdWn.woff2",
-    "src": "JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2"
+    "src": "_JTUSjIg1_i6t8kCHKm459WRhyzbi-DV_LRdWn.woff2"
   },
-  "JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2": {
+  "_JTUSjIg1_i6t8kCHKm459WZhyzbi-BcziCZ2I.woff2": {
     "file": "assets/JTUSjIg1_i6t8kCHKm459WZhyzbi-BcziCZ2I.woff2",
-    "src": "JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2"
+    "src": "_JTUSjIg1_i6t8kCHKm459WZhyzbi-BcziCZ2I.woff2"
   },
-  "JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2": {
+  "_JTUSjIg1_i6t8kCHKm459Wdhyzbi-BLkAzDQP.woff2": {
     "file": "assets/JTUSjIg1_i6t8kCHKm459Wdhyzbi-BLkAzDQP.woff2",
-    "src": "JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2"
+    "src": "_JTUSjIg1_i6t8kCHKm459Wdhyzbi-BLkAzDQP.woff2"
   },
-  "JTUSjIg1_i6t8kCHKm459Wlhyw.woff2": {
+  "_JTUSjIg1_i6t8kCHKm459Wlhyw-AeMhpAKq.woff2": {
     "file": "assets/JTUSjIg1_i6t8kCHKm459Wlhyw-AeMhpAKq.woff2",
-    "src": "JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+    "src": "_JTUSjIg1_i6t8kCHKm459Wlhyw-AeMhpAKq.woff2"
   },
-  "_html2canvas-DLxb9CCu.js": {
-    "file": "assets/html2canvas-DLxb9CCu.js",
-    "name": "html2canvas",
-    "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
-  },
-  "boxicons.eot": {
+  "_boxicons-CSrLvhY_.eot": {
     "file": "assets/boxicons-CSrLvhY_.eot",
-    "src": "boxicons.eot"
+    "src": "_boxicons-CSrLvhY_.eot"
   },
-  "boxicons.svg": {
-    "file": "assets/boxicons-Dp7W9qN3.svg",
-    "src": "boxicons.svg"
-  },
-  "boxicons.ttf": {
-    "file": "assets/boxicons-EIQNrSje.ttf",
-    "src": "boxicons.ttf"
-  },
-  "boxicons.woff": {
+  "_boxicons-CTVby2V1.woff": {
     "file": "assets/boxicons-CTVby2V1.woff",
-    "src": "boxicons.woff"
+    "src": "_boxicons-CTVby2V1.woff"
   },
-  "boxicons.woff2": {
+  "_boxicons-CeGEncwm.woff2": {
     "file": "assets/boxicons-CeGEncwm.woff2",
-    "src": "boxicons.woff2"
+    "src": "_boxicons-CeGEncwm.woff2"
+  },
+  "_boxicons-Dp7W9qN3.svg": {
+    "file": "assets/boxicons-Dp7W9qN3.svg",
+    "src": "_boxicons-Dp7W9qN3.svg"
+  },
+  "_boxicons-EIQNrSje.ttf": {
+    "file": "assets/boxicons-EIQNrSje.ttf",
+    "src": "_boxicons-EIQNrSje.ttf"
   },
   "index.html": {
-    "file": "assets/index-E3LJbPwv.js",
+    "file": "assets/index-CPFsryij.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
-      "_html2canvas-DLxb9CCu.js",
+      "node_modules/html2canvas/dist/html2canvas.esm.js",
       "node_modules/dompurify/dist/purify.es.js",
       "node_modules/canvg/lib/index.es.js"
     ],
@@ -63,7 +55,7 @@
     ]
   },
   "node_modules/canvg/lib/index.es.js": {
-    "file": "assets/index.es-DAlEInuC.js",
+    "file": "assets/index.es-DBWRg86X.js",
     "name": "index.es",
     "src": "node_modules/canvg/lib/index.es.js",
     "isDynamicEntry": true,
@@ -75,6 +67,12 @@
     "file": "assets/purify.es-a-CayzAK.js",
     "name": "purify.es",
     "src": "node_modules/dompurify/dist/purify.es.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/html2canvas/dist/html2canvas.esm.js": {
+    "file": "assets/html2canvas.esm-CBrSDip1.js",
+    "name": "html2canvas.esm",
+    "src": "node_modules/html2canvas/dist/html2canvas.esm.js",
     "isDynamicEntry": true
   },
   "src/css/styles.css": {
